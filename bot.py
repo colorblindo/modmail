@@ -337,7 +337,7 @@ class Modmail(commands.Bot):
 
     @property
     def blocked_em(self):
-        em = discord.Embed(title='Message not sent!', color=discord.Color.red())
+        em = discord.Embed(title='You tried bro!', color=discord.Color.red())
         em.description = 'Has sido bloqueado del bot de sugerencias.'
         return em
 
@@ -360,7 +360,7 @@ class Modmail(commands.Bot):
         if str(message.author.id) in blocked:
             return await message.author.send(embed=self.blocked_em)
 
-        em = discord.Embed(title='Thanks for the message!')
+        em = discord.Embed(title='Pero buenoooooooooooooooo!')
         em.description = 'Has abierto un ticket de sugerencia!'
         em.color = discord.Color.green()
 
