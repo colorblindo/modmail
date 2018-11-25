@@ -361,7 +361,7 @@ class Modmail(commands.Bot):
             return await message.author.send(embed=self.blocked_em)
 
         em = discord.Embed(title='Thanks for the message!')
-        em.description = 'Gracias por tu sugerencia, lo tendré en cuenta!'
+        em.description = 'Has abierto un ticket de sugerencia!'
         em.color = discord.Color.green()
 
         if channel is not None:
