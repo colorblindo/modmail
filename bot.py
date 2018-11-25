@@ -202,7 +202,7 @@ class Modmail(commands.Bot):
         if not categ:
             return await ctx.send('This server is not set up.')
         em = discord.Embed(title=' Gracias por tu aportación.')
-        em.description = f'**{ctx.author}** ha cerrado esta sesion, sad'
+        em.description = f'**{ctx.author}** ha cerrado esta sesión, sad'
         em.color = discord.Color.red()
         for category, channels in ctx.guild.by_category():
             if category == categ:
@@ -225,7 +225,7 @@ class Modmail(commands.Bot):
         user_id = int(ctx.channel.topic.split(': ')[1])
         user = self.get_user(user_id)
         em = discord.Embed(title='Gracias por tu aportación.')
-        em.description = f'**{ctx.author}** ha cerrado esta sesion, sad'
+        em.description = f'**{ctx.author}** ha cerrado esta sesión, sad'
         em.color = discord.Color.red()
         try:
             await user.send(embed=em)
